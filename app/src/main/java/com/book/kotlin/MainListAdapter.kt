@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
+import com.book.kotlin.userList.UserListActivity
 import com.book.kotlin.weather.WeatherListActivty
 
 /**
@@ -38,6 +39,10 @@ class MainListAdapter (val context: Context,val items: List<String>) : BaseAdapt
             when(position){
                 0 -> {
                     val intent = Intent(context, WeatherListActivty::class.java)
+                    context.startActivity(intent)
+                }
+                1->{
+                    val intent = Intent(context, UserListActivity::class.java)
                     context.startActivity(intent)
                 }
             }

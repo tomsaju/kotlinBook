@@ -2,10 +2,11 @@ package com.book.kotlin
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.AdapterView
 import android.widget.ListView
 
 class MainActivity : AppCompatActivity()  {
-    private val items = listOf( "Weatherlist","user list")
+    private val items = listOf( "Weatherlist","Retrofit and gson")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity()  {
 
 
 
-
     }
 }
+
+
